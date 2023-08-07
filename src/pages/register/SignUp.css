@@ -1,0 +1,192 @@
+/* Custom styles for react-hot-toast */
+:root {
+  --main-color: #28a745;
+  --secondary-color: #333;
+}
+
+.react-hot-toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.react-hot-toast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.react-hot-toast-toast {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.react-hot-toast-message {
+  font-size: 1rem;
+}
+
+.react-hot-toast-success {
+  background-color: var(--main-color);
+}
+
+.react-hot-toast-error {
+  background-color: #dc3545;
+}
+
+.react-hot-toast-loading {
+  background-color: #ffc107;
+}
+
+.react-hot-toast-icon {
+  margin-right: 0.5rem;
+}
+
+/* Global styles */
+* {
+  max-height: 80vh;
+  box-sizing: border-box;
+}
+
+/* Signup page */
+.new-signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.page-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.signUp-form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 30rem;
+  max-width: 100%;
+  margin-bottom: auto;
+}
+
+.form-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.invalid-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.signUp-button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.signUp-button:hover {
+  background-color: #218838;
+}
+
+.forgot-password-link {
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+  color: #218838;
+}
+
+.login-link {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #218838;
+}
+
+.link-to-signIn {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signIn-link {
+  color: #218838;
+  text-decoration: none;
+}
+
+.signIn-link:hover {
+  color: #218838;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1023px) {
+  /* Styles for mobile and tablet devices */
+  .signUp-form {
+    width: 90%;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktop devices */
+  .new-signup-container {
+    padding: 4rem;
+  }
+
+  .signUp-form {
+    max-width: 600px;
+  }
+
+  .page-heading {
+    font-size: 3rem;
+  }
+}

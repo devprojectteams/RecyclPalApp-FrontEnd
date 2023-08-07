@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Global styles */
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f3057;
+  padding: 0.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  /* font-size: 2rem; */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5%;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-items a:hover {
+  background-color: #eae9ee;
+  color: #0f3057;
+  height: 28px;
+ 
+}
+
+
+
+
+@media screen and (min-width: 1020px) {
+  .logo {
+    width: 150px;
+    height: 180px;
+    margin-left: 3.5rem;
+    margin-top: 80px ;
+  }
+
+  .nav-cont {
+    font-weight: bold;
+    padding: 1rem;
+    height: 100px;
+    }
+
+  .nav-items {
+   height: 0px;
+   font-weight: bold;
+}
+
+  }
+
+
+
+
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-cont {
+    flex-direction: column;
+    height: 300px;
+    align-items: flex-start;
+    height:auto;
+  }
+
+  .logo {
+    width: 80px;
+    height: 90px;
+     font-size: 0.2rem;
+    margin-top: -10px; 
+  }
+
+  .nav-items {
+    flex-direction:  column;
+    align-items: flex-start;
+     margin-top: -20px;
+  }
+
+  .nav-items a {
+    /* margin: 0.1rem 0; */
+    margin-top: -15px ;
+    display: flex;
+    align-items: center;
+      
+  }
+
+  .nav-items a::before {
+    /* Font Awesome hamburger icon */
+    /* content: '\f0c9';  */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 0.5rem;
+   
+  }
+
+  .nav-items a:hover {
+    background-color: transparent;
+    color: #007bff;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}

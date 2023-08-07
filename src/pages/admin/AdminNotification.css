@@ -1,0 +1,118 @@
+
+.admin-notification {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+  }
+  
+  .admin-notification h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .admin-notification ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-notification li {
+    margin-bottom: 10px;
+  }
+  
+  .admin-notification button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-notification button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Styling for ToastContainer */
+  .Toastify__toast-container {
+    max-width: 800px;
+    margin: auto;
+    font-size: 14px;
+  }
+  
+  /* Styling for notification types */
+  .Toastify__toast--info {
+    background-color: #17a2b8;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #28a745;
+  }
+  
+  .Toastify__toast--warning {
+    background-color: #ffc107;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #dc3545;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    .admin-notification {
+      padding: 10px;
+      margin: 10px;
+      max-width: 500px;
+    }
+    
+    .admin-notification h2 {
+      font-size: 20px;
+    }
+    
+    .admin-notification li {
+      font-size: 14px;
+    }
+    
+    .admin-notification button {
+      font-size: 14px;
+      padding: 5px;
+    }
+    
+    .Toastify__toast-container {
+      max-width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .admin-notification {
+      padding: 5px;
+      margin: 5px;
+      max-width: 300px;
+    }
+    
+    .admin-notification h2 {
+      font-size: 18px;
+    }
+    
+    .admin-notification li {
+      font-size: 12px;
+    }
+    
+    .admin-notification button {
+      font-size: 12px;
+      padding: 5px;
+    }
+    
+    .Toastify__toast-container {
+      max-width: 300px;
+    }
+  }

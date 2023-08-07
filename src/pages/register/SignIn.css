@@ -1,0 +1,198 @@
+/* Custom styles for react-hot-toast */
+:root {
+  --main-color: #28a745;
+  --secondary-color: #333;
+}
+
+.react-hot-toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.react-hot-toast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.react-hot-toast-toast {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.react-hot-toast-message {
+  font-size: 1rem;
+}
+
+.react-hot-toast-success {
+  background-color: var(--main-color);
+}
+
+.react-hot-toast-error {
+  background-color: #dc3545;
+}
+
+.react-hot-toast-loading {
+  background-color: #ffc107;
+}
+
+.react-hot-toast-icon {
+  margin-right: 0.5rem;
+}
+
+/* Global styles */
+* {
+  max-height: 80vh;
+  box-sizing: border-box;
+}
+
+/* SignIn page */
+.new-signIn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.page-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  /* margin-bottom: 2rem; */
+  color: var(--main-color);
+}
+
+.signIn-form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 30rem;
+  max-width: 90%;
+}
+
+.form-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  /* border-radius: 4px; */
+  margin-bottom: 1.5rem;
+  margin-bottom: auto;
+}
+
+.invalid-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.signIn-button {
+  /* background-color: var(--main-color); */
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.signIn-button:hover {
+  background-color:#0056b3;
+}
+
+.forgot-password-link {
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+  color: #007bff;
+}
+
+.login-link {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #218838;
+}
+
+.link-to-signUp {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signUp-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signUp-link:hover {
+  color: #218838;
+}
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 1023px) {
+  /* Styles for mobile and tablet devices */
+  .signIn-form {
+    width: 90%;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktop devices */
+  .new-signIn-container {
+    padding: 4rem;
+  }
+
+  .signIn-form {
+    max-width: 600px;
+  }
+
+  .page-heading {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,185 @@
+// import React, { useState } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCheckCircle, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+// import axios from 'axios';
+// import toast, { Toaster } from 'react-hot-toast';
+
+// import './SignIn.css';
+
+// const SignIn = () => {
+//   //const [username, setUsername] = useState('');
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
+//   const [passwordVisible, setPasswordVisible] = useState(false);
+//   const navigate = useNavigate();
+
+//   const togglePasswordVisibility = () => {
+//     setPasswordVisible(!passwordVisible);
+//   };
+
+//   const manageSignIn = async (event) => {
+//     event.preventDefault();
+//     const url = 'http://localhost:8080/api/v1/provider/register';
+//     const data = {
+//       email: email,
+//       password: password,
+//     };
+
+//     // Validate entered email
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     if (email.trim() !=== '' || password !=== '' ) {
+//       notificationAlert('Please fill the form correctly!');
+//       return;
+//     }
+       
+//       if (email.trim() === '') {
+//         ErrorNotification('Please enter your email address!');
+//         return;
+//       } 
+      
+//       if (!emailRegex.test(email)) {
+//         ErrorNotification('Please enter a valid email address');
+//         return
+//       }
+
+//       if (password.length < 6) {
+//         ErrorNotification('Password must be at least 6 characters long');
+//         return;
+//       }
+
+//       try {
+//         const response = await axios.post(url, data);
+//         if (response.data.message === 'Email already exists') {
+//           ErrorNotification('Email already exists');
+//         }
+//         const response = await axios.post(url, data);
+//       if (response.data.message === 'Invalid credentials') {
+//         ErrorNotification('Invalid credentials. Please try again.');
+//         } else {
+//           console.log(response.data.message);
+//             successNotification('Logged in successfully!');
+//           localStorage.setItem('username', username);
+//           navigate('/HomePage');
+//         }
+//       } catch (error) {
+//         if (error.response) {
+//           ErrorNotification('Invalid details entered.');
+//         } else {
+//           console.error(error);
+//           ErrorNotification('An error occurred. Please try again.');
+//         }
+//       }
+//     } else {
+//       notificationAlert('Please fill the form correctly!');
+//     }
+//   };
+
+//   const notificationAlert = (message) => {
+//     toast.info(message, {
+//       position: 'top-center',
+//       duration: 3000,
+//       theme: 'light',
+//       icon: <FontAwesomeIcon icon={faCheckCircle} />,
+//     });
+//   };
+
+//   const successNotification = (message) => {
+//     toast.success(message, {
+//       duration: 3000,
+//       theme: 'dark',
+//       position: 'top-center',
+//     });
+//   };
+
+//   const ErrorNotification = (message) => {
+//     toast.error(message, {
+//       position: 'top-center',
+//       duration: 3000,
+//       theme: 'light',
+//     });
+//   };
+
+//   return (
+//     <div className="new-signIn-container">
+//       <Toaster position="top-right" reverseOrder={false} />
+//       <div>
+//         <h1 className="page-heading">RecyclPal</h1>
+//       </div>
+
+//       <form onSubmit={manageSignUp}>
+//         <div className="signIn-form">
+//           <h1 className="form-heading">Sign In</h1>
+//           <hr />
+
+//           <input
+//             type="text"
+//             className={`form-input ${!username && "invalid-input"}`}
+//             name="username"
+//             value={username}
+//             onChange={(e) => setUsername(e.target.value)}
+//             placeholder="Enter your username"
+//             required
+//           />
+//           {!username && (
+//             <div className="invalid-message">Username cannot be empty</div>
+//           )}
+
+//           <input
+//             type="text"
+//             className={`form-input ${!email && "invalid-input"}`}
+//             name="email"
+//             value={email}
+//             onChange={(e) => setEmail(e.target.value)}
+//             placeholder="Enter your email example@gmail.com"
+//             required
+//           />
+//           {!email && (
+//             <div className="invalid-message">Email cannot be empty</div>
+//           )}
+
+//           <input
+//             type={passwordVisible ? "text" : "password"}
+//             className={`form-input ${!password && "invalid-input"}`}
+//             name="password"
+//             value={password}
+//             onChange={(e) => setPassword(e.target.value)}
+//             placeholder="Enter your password"
+//             required
+//           />
+
+//           <FontAwesomeIcon
+//             icon={passwordVisible ? faEye : faEyeSlash}
+//             className="password-icon"
+//             onClick={togglePasswordVisibility}
+//           />
+//           {!password && (
+//             <div className="invalid-message">Password cannot be empty</div>
+//           )}
+
+//           <button
+//             type="submit"
+//             className="signIn-button"
+//             disabled={!email.trim() || !password.trim() || !username.trim()}
+//             onClick={manageSignIn}
+//           >
+//             Sign In
+//           </button>
+
+//           <Link to="/forgotPassword" className="forgot-password-link">
+//             Forgot password?
+//           </Link>
+
+//           <p className="link-to-signUp">
+//             Don't have an Account{" "}
+//             <Link to="/signUp" className="signUp-link">
+//               <center>Sign Up</center>
+//             </Link>
+//           </p>
+//         </div>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default SignIn;

@@ -1,0 +1,201 @@
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-slider {
+  display: flex;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Slide Buttons */
+.slide-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.slide-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+/* Fancy styling */
+.slide:nth-child(1) {
+  background-color: #e74c3c;
+}
+
+.slide:nth-child(2) {
+  background-color: #3498db;
+}
+
+.slide:nth-child(3) {
+  background-color: #2ecc71;
+}
+
+
+.text-area-1 {
+  padding: 16px;
+}
+
+.text-area-1 h1 {
+  font-size: 32px;
+}
+
+.text-area-1 p {
+  font-size: 14px;
+}
+
+/* Text Area Styling */
+.text-area-1 {
+padding: 32px;
+}
+
+.text-area-1 h1 {
+font-size: 42px;
+color : 007bff;
+text-align: center;
+}
+
+.text-area-1 p {
+font-size: 18px;
+color: #555;
+line-height: 1.5;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .text-area-1 {
+    padding: 16px;
+  }
+
+  .text-area-1 h1 {
+    font-size: 32px;
+  }
+
+  .text-area-1 p {
+    font-size: 14px;
+  }
+}
+
+
+/* Text Area Styling */
+.text-area-1 {
+  padding: 32px;
+}
+
+.text-area-1 h1 {
+  font-size: 42px;
+  color : 007bff;
+  text-align: center;
+}
+
+.text-area-1 p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .slide-buttons {
+    bottom: 10px;
+  }
+  
+  .slide-button {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 0 3px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+}

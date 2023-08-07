@@ -1,0 +1,111 @@
+/* Navbar Section */
+.navbar_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D47A1; /* Appealing blue background color */
+    padding: 10px 50px; /* Add some padding */
+    color: #ffffff; /* Set text color to white */
+  }
+  
+  .navbar_first > img {
+    width: 100px; /* Adjust logo size */
+  }
+  
+  .navbar_second > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  
+  .navbar_second > ul > li {
+    margin: 15px; /* Adjust margins for list items */
+    border: 2px solid #ffffff; /* Add border and set border color to white */
+    padding: 5px 15px; /* Add some padding to list items */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add smooth transition effect on background change */
+  }
+  
+  .navbar_second > ul > li:hover {
+    background-color: #1565C0; /* Change background color on hover */
+  }
+  
+  /* Hero Section */
+  .hero_section {
+    width: 100%;
+  }
+  
+  .hero_section_second {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem;
+  }
+  
+  .hero_section_inner_one {
+    margin: 2rem;
+    background-color: #BBDEFB; /* Add a light blue background color for contrast */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .hero_section_inner_two {
+    /* Add styles as needed for the second inner section */
+  }
+  
+  .hero_section_inner_two > img {
+    width: 38rem;
+    margin-right: 2rem;
+  }
+  
+  .hero_section_textone > p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; /* Center the text */
+    color: #263238;
+  }
+  
+  .hero_section_texttwo > p {
+    font-size: 1.15rem;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto; /* Center the text */
+    color: #263238;
+  }
+  
+  .hero_section_get_started > button {
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 16rem;
+    font-size: medium;
+    background-color: #1565C0; /* Set button background color */
+    color: #ffffff; /* Set button text color to white */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add smooth transition effect on background change */
+  }
+  
+  .hero_section_get_started > button:hover {
+    background-color: #0D47A1; /* Change background color on hover */
+  }
+  
+  /* About Us Section */
+  .about-us {
+    width: 100%;
+  }
+  
+  .about-us-image > img {
+    width: 50%;
+  }
+  
+  .about-us-inner {
+    display: flex;
+    width: 50%;
+  }
+  

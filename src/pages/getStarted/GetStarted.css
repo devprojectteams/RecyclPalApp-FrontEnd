@@ -1,0 +1,254 @@
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.getStartedBody {
+  background-color: rgb(25, 206, 25);
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 2000px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333333;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555555;
+}
+
+/* Home Section Styles */
+.home-section {
+  padding: 100px 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.home-section p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  height: 190px;
+  padding: 1px 1px;
+  background-color: #0e6de0;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: breathing 2.5s ease-out infinite normal;
+  overflow: hidden;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #2ff308;
+  color: #ff6f00;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Button Breathing and Animation */
+.cta-button {
+  height: 240px;
+  padding: 2rem 2rem;
+  background-color: #0e6de0;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: breathing 2.5s ease-out infinite normal;
+  overflow: hidden;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #2ff308;
+  color: #ff6f00;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a keyframe animation for the breathing effect */
+@keyframes breathing {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  60% { transform: scale(1); }
+}
+
+dropdown-btn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+
+.dropdown-content a{
+  display: grid;
+   margin-bottom: -30px;
+  color: #000;
+}
+
+.dropdown-content a{
+    /* text-decoration: none; */
+}
+
+.dropdown-content a:hover{
+  display: grid;
+  color: #fff;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styling */
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333333;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-link {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .home-section {
+    padding-top: 60px;
+  }
+
+  .home-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .home-section p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    margin-top: 50px;
+    height: auto;
+  }
+}

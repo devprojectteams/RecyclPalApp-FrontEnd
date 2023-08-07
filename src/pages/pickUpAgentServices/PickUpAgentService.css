@@ -1,0 +1,89 @@
+.recyclpal-pickup-agent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+    margin-top: 180px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+button.accepted {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+button.accepted:hover {
+  background-color: #449d44;
+}
+
+button.picked {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+button.picked:hover {
+  background-color: #ec971f;
+}
+
+button.accepted:disabled,
+button.picked:disabled {
+  background-color: #ccc;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

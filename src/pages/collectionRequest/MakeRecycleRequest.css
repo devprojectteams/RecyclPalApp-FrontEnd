@@ -1,0 +1,115 @@
+
+/* Wrapper styling */
+.collection-request-form {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1080px; /* Set the maximum width of the form */
+}
+
+/* Form title styling */
+.form-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.form-title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Form container styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form group styling */
+.form-group {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Input styling */
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #327ad1;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 1rem;
+  background-color: #327ad1;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #327ad1;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .form-title {
+    margin-bottom: 30px;
+  }
+
+  .form-title h1 {
+    font-size: 24px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}

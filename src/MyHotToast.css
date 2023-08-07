@@ -1,0 +1,33 @@
+.toast {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .toast-message {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .toast-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .toast-success {
+    background-color: #4caf50;
+  }
+  
+  .toast-error {
+    background-color: #f44336;
+  }
+  
+  .toast-warning {
+    background-color: #ff9800;
+  }
+  

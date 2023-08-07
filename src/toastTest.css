@@ -1,0 +1,38 @@
+.my-toast {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .my-toast-message {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .my-toast-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .my-toast-success {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .my-toast-error {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .my-toast-warning {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  

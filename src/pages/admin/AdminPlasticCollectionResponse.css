@@ -1,0 +1,110 @@
+.admin-plastic-collection-response {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .admin-plastic-collection-response {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .admin-plastic-collection-response {
+    max-width: 400px;
+  }
+}
+
+.admin-plastic-collection-response h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.admin-plastic-collection-response table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.admin-plastic-collection-response th,
+.admin-plastic-collection-response td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.admin-plastic-collection-response th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admin-plastic-collection-response button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.admin-plastic-collection-response button:hover {
+  background-color: #2b8a3e;
+}
+
+.admin-plastic-collection-response .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.admin-plastic-collection-response .loading p {
+  font-size: 1.2rem;
+}
+
+.admin-plastic-collection-response .success {
+  color: green;
+  font-weight: bold;
+}
+
+.admin-plastic-collection-response .error {
+  color: red;
+  font-weight: bold;
+} 
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 60%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+} 

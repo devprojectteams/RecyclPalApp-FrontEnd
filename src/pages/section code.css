@@ -1,0 +1,60 @@
+.root{
+    primaryColour: --green;
+}
+
+.sectionBody1Heading{
+      text-align: center;
+       font-size: 4rem;
+       color: #555 ;
+       padding: 1rem;
+       padding-top: 7rem;
+}
+
+.sectionBody1Heading i {
+color: var(--green);
+font-size: 2rem;  
+}
+
+.sectionBody1Heading .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionBody1Heading .row .image{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+
+.sectionBody1Heading .row .image{
+    width: 100%  ;
+}
+
+.sectionBody1Heading .row .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+} 
+
+.sectionBody1Heading .row .content h3{
+    font-size: 3rem;
+    color: var(--green);
+} 
+
+.sectionBody1Heading .row .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.sectionBody1Heading .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sectionBody1Heading .box-container .box{
+    
+}

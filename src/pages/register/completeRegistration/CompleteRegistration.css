@@ -1,0 +1,415 @@
+body{
+    background-color: #fffe;
+}
+
+.completeRegistration-request-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 4.5rem;
+  margin: 1.5rem;
+
+}
+
+.form-titleCompRE h1 {
+    align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-groupCompRE {
+  margin: 30px 0;
+  position: relative;
+}
+
+.MuiFormControl-root {
+  margin: 0 !important;
+}
+
+.text-validator-container {
+  position: relative;
+}
+
+.text-validator-container .MuiInput-underline:before,
+.text-validator-container .MuiInput-underline:after {
+  display: none !important;
+}
+
+.text-validator-container .MuiInput-underline:hover:not(.Mui-disabled):before {
+  display: none !important;
+}
+
+.text-validator-container .MuiInputBase-input {
+  padding-left: 2rem !important;
+  font-size: 1.2rem;
+}
+
+.text-validator-container .MuiInputLabel-shrink {
+  position: absolute;
+  left: 2rem;
+  top: -5px;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.text-validator-container .MuiInputLabel-shrink.Mui-error {
+  color: #ff5252 !important;
+}
+
+.text-validator-container .Mui-focused .MuiInputLabel-shrink {
+  transform: translateY(-28px) !important;
+  font-size: 1rem;
+}
+
+.text-validator-container .MuiOutlinedInput-notchedOutline {
+  border-color: #c8d2e3;
+  border-width: 2px;
+}
+
+.text-validator-container .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #0069c0;
+}
+
+.text-validator-container .MuiFormHelperText-root {
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  margin-top: 10px;
+  color: #ff5252;
+}
+
+.form-groupCompRE label {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.upload-image-containerCompRE {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border: 2px dashed #c8d2e3;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.upload-image-containerCompRE:hover {
+  border-color: #0069c0;
+}
+
+.upload-image-iconCompRE {
+  font-size: 3rem;
+  color: #c8d2e3;
+  margin-top: 30px;
+}
+
+.upload-image-labelCompRE p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c8d2e3;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.preview-image-containerCompRE {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.preview-imageCompRE {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-image-buttonCompRE {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  background-color: #c8d2e3;
+  color: #f1dbdb;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-image-buttonCompRE:hover {
+  background-color: #ff5252;
+}
+
+.button-containerCompRE {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"] {
+  background-color: #0069c0;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover:enabled {
+  background-color: #00b0ff;
+}
+
+button[type="submit"]:disabled {
+  background-color: #c8d2e3;
+  cursor: not-allowed;
+}
+
+.loading-spinner-containerCompRE {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinnerCompRE {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #0069c0;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .completeRegistration-request-form {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .form-titleCompRE h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-validator-container .MuiInputBase-input {
+    font-size: 1rem;
+  }
+
+  .text-validator-container .MuiInputLabel-shrink {
+    font-size: 1rem;
+  }
+
+  .form-groupCompRE label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .upload-image-containerCompRE {
+    height: 150px;
+    padding: 5px;
+  }
+
+  .upload-image-iconCompRE {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .upload-image-labelCompRE p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .loading-spinner-containerCompRE {
+    height: 30px;
+  }
+
+  .loading-spinnerCompRE {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .completeRegistration-request-form {
+    padding: 1.5rem;
+    margin: 0.75rem;
+  }
+
+  .form-titleCompRE h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-validator-container .MuiInputBase-input {
+    font-size: 1.1rem;
+  }
+
+  .text-validator-container .MuiInputLabel-shrink {
+    font-size: 1.1rem;
+  }
+
+  .form-groupCompRE label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .upload-image-containerCompRE {
+    height: 160px;
+    padding: 5px;
+  }
+
+  .upload-image-iconCompRE {
+    font-size: 2.5rem;
+    margin-top: 25px;
+  }
+
+  .upload-image-labelCompRE p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 1.1rem;
+  }
+
+  .loading-spinner-containerCompRE {
+    height: 35px;
+  }
+
+  .loading-spinnerCompRE {
+    width: 22px;
+    height: 22px;
+    border-width: 2px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .completeRegistration-request-form {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .text-validator-container .MuiInputBase-input {
+    font-size: 1.2rem;
+  }
+
+  .text-validator-container .MuiInputLabel-shrink {
+    font-size: 1.2rem;
+  }
+
+  .form-groupCompRE label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .upload-image-containerCompRE {
+    height: 180px;
+    padding: 10px;
+  }
+
+  .upload-image-iconCompRE {
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+
+  .upload-image-labelCompRE p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+
+  .loading-spinner-containerCompRE {
+    height: 40px;
+  }
+
+  .loading-spinnerCompRE {
+    width: 24px;
+    height: 24px;
+    border-width: 3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .completeRegistration-request-form {
+    padding: 2.5rem;
+    margin: 1.25rem;
+  }
+
+  .form-titleCompRE h1 {
+    font-size: 2rem;
+  }
+
+  .text-validator-container .MuiInputBase-input {
+    font-size: 1.2rem;
+  }
+
+  .text-validator-container .MuiInputLabel-shrink {
+    font-size: 1.2rem;
+  }
+
+  .form-groupCompRE label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .upload-image-containerCompRE {
+    height: 200px;
+    padding: 10px;
+  }
+
+  .upload-image-iconCompRE {
+    font-size: 3.5rem;
+    margin-top: 35px;
+  }
+
+  .upload-image-labelCompRE p {
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+
+  button[type="submit"] {
+    padding: 12px 24px;
+    font-size: 1.3rem;
+  }
+
+  .loading-spinner-containerCompRE {
+    height: 45px;
+  }
+
+  .loading-spinnerCompRE {
+    width: 26px;
+    height: 26px;
+    border-width: 4px;
+  }
+}

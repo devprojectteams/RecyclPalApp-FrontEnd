@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  max-width: 800px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-details {
+  padding: 20px;
+  text-align: center;
+  background-color: #84a17d;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item-details__title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.item-details__amount {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout {
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.checkout-form {
+  padding: 20px;
+}
+
+.checkout-field {
+  margin-bottom: 20px;
+}
+
+.checkout-field label {
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.checkout-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.paystack-button {
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #bfbfbf;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 10% auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .item-details {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .checkout {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
